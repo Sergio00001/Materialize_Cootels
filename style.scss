@@ -4,7 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -52,6 +60,7 @@ $headerFont: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 150%;
   color: $textColor;
+  margin-bottom: 5px;
 }
 
 .header {
