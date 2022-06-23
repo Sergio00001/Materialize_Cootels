@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
@@ -37,15 +38,15 @@
     <header>
       <div class="container">
         <div class="nav_menu">
-          <div class="nav_logo">
+          <div class="nav_logo" data-aos="fade-right">
             <a href="#" class="logo">Cootels</a>
           </div>
-          <div class="nav_links hide-on-small-only">
+          <div class="nav_links hide-on-small-only" data-aos="zoom-in">
             <a href="#" class="nav_link">Rooms</a>
             <a href="#" class="nav_link">Reservation</a>
             <a href="#" class="nav_link">Contacts</a>
           </div>
-          <div class="nav_btn hide-on-small-only">
+          <div class="nav_btn hide-on-small-only" data-aos="fade-left">
             <a href="#" class="btn">Get Started</a>
           </div>
           <div class="nav_dropdown">
@@ -70,7 +71,12 @@
     <main>
       <div class="main_top">
         <div class="container">
-          <div class="main_top__content">
+          <div
+            class="main_top__content"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+            data-aos-duration="1000"
+          >
             <div class="main_top__content_right main_top__content_for_phone">
               <div class="left_img">
                 <img
@@ -137,7 +143,12 @@
       <div class="main_center">
         <div class="container">
           <div class="main_center__content">
-            <div class="main_center__content_left">
+            <div
+              class="main_center__content_left"
+              data-aos="fade-right"
+              data-aos-duration="700"
+              data-aos-anchor-placement="center-bottom"
+            >
               <img
                 class="for_small_phones"
                 src="images/main_center_photo.png"
@@ -145,19 +156,35 @@
               />
             </div>
             <div class="main_center__content_right">
-              <h2 class="main_center__header header">
+              <h2
+                class="main_center__header header"
+                data-aos="fade-left"
+                data-aos-delay="50"
+              >
                 Cozy and Down to Earth Cootage Hotel in Norway.
               </h2>
-              <p class="main_center__text text">
+              <p
+                class="main_center__text text"
+                data-aos="fade-left"
+                data-aos-delay="150"
+              >
                 Our Cootage Hotel is an intimate hideway concieved for dicerning
                 travelers. It faces directly the unique and spectacular panorama
                 of the Hallerbos Jungle.
               </p>
-              <p class="main_center__text text">
+              <p
+                class="main_center__text text"
+                data-aos="fade-left"
+                data-aos-delay="250"
+              >
                 Cootels extends along a private, quiet, and beautiful nature.
                 Stay away from crowd and enjoy the cozy and beauty with us.
               </p>
-              <div class="main_center__button">
+              <div
+                class="main_center__button"
+                data-aos="fade-left"
+                data-aos-delay="350"
+              >
                 <a href="#" class="btn">Learn More</a>
               </div>
             </div>
@@ -169,15 +196,21 @@
         <div class="container">
           <div class="main_footer__top">
             <div class="main_footer__top_left">
-              <h2 class="main_footer__top_header header">Cabin Activities</h2>
-              <p class="main_footer__top_text text">
+              <h2 class="main_footer__top_header header" data-aos="fade-in">
+                Cabin Activities
+              </h2>
+              <p class="main_footer__top_text text" data-aos="fade-in">
                 Don’t worry to get bored easily in our cabin. We have so many
                 cabin activities for you to do it alone or with group. Maybe
                 this is the best chance for you to make new friends or even a
                 lover.
               </p>
             </div>
-            <div class="main_footer__top_right">
+            <div
+              class="main_footer__top_right"
+              data-aos="zoom-out"
+              data-aos-duration="700"
+            >
               <img
                 class="for_small_phones"
                 src="images/footer_top.png"
@@ -186,14 +219,18 @@
             </div>
           </div>
           <div class="main_footer__bottom">
-            <div class="main_footer__bottom_left">
+            <div
+              class="main_footer__bottom_left"
+              data-aos="zoom-out"
+              data-aos-duration="700"
+            >
               <img src="images/footer_bottom.png" alt="photo" />
             </div>
             <div class="main_footer__bottom_right">
-              <h2 class="main_footer__bottom_header header">
+              <h2 class="main_footer__bottom_header header" data-aos="fade-in">
                 100% Organic Food
               </h2>
-              <p class="main_footer__bottom_text text">
+              <p class="main_footer__bottom_text text" data-aos="fade-in">
                 We served 100% organic, low process and delicious food. We allow
                 our guest to have breakfast or dinner request.What ever made
                 your taste buds happy.
@@ -202,16 +239,20 @@
           </div>
           <div class="main_footer__bottom main_footer__phone">
             <div class="main_footer__bottom_right">
-              <h2 class="main_footer__bottom_header header">
+              <h2 class="main_footer__bottom_header header" data-aos="fade-in">
                 100% Organic Food
               </h2>
-              <p class="main_footer__bottom_text text">
+              <p class="main_footer__bottom_text text" data-aos="fade-in">
                 We served 100% organic, low process and delicious food. We allow
                 our guest to have breakfast or dinner request.What ever made
                 your taste buds happy.
               </p>
             </div>
-            <div class="main_footer__bottom_left">
+            <div
+              class="main_footer__bottom_left"
+              data-aos="zoom-out"
+              data-aos-duration="700"
+            >
               <img
                 class="for_small_phones"
                 src="images/footer_bottom.png"
@@ -224,7 +265,7 @@
     </main>
 
     <div class="booking">
-      <div class="booking_top">
+      <div class="booking_top" data-aos="flip-up">
         <div class="container">
           <div class="booking_top__heading">
             <h2 class="booking_top__header header">Many Rooms to Choose</h2>
@@ -243,7 +284,12 @@
       <div class="booking_center">
         <div class="container">
           <div class="booking_center__content">
-            <div class="booking_center__card">
+            <div
+              class="booking_center__card"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
               <img
                 class="booking_img"
                 src="images/booking_left.png"
@@ -259,7 +305,12 @@
                 <img src="images/learn_more_arrow.png" alt="arrow" />
               </div>
             </div>
-            <div class="booking_center__card">
+            <div
+              class="booking_center__card"
+              data-aos="fade-in"
+              data-aos-delay="250"
+              data-aos-duration="1000"
+            >
               <img
                 class="booking_img"
                 src="images/booking_center.png"
@@ -275,7 +326,12 @@
                 <img src="images/learn_more_arrow.png" alt="arrow" />
               </div>
             </div>
-            <div class="booking_center__card">
+            <div
+              class="booking_center__card"
+              data-aos="fade-left"
+              data-aos-delay="450"
+              data-aos-duration="700"
+            >
               <img
                 class="booking_img"
                 src="images/booking_right.png"
@@ -298,7 +354,11 @@
       <div class="booking_footer">
         <div class="container">
           <div class="booking_footer__content">
-            <div class="booking_footer__content_left">
+            <div
+              class="booking_footer__content_left"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <h5 class="booking_footer__left_pre_header">
                 Start your journey!
               </h5>
@@ -317,6 +377,9 @@
             <div class="booking_footer__content_right">
               <div
                 class="booking_footer__right_first-step booking_footer__step"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="700"
               >
                 <div class="step_top">
                   <h2 class="booking_footer__right_header phone_first header">
@@ -337,6 +400,9 @@
               </div>
               <div
                 class="booking_footer__right_second-step booking_footer__step active"
+                data-aos="zoom-in"
+                data-aos-delay="250"
+                data-aos-duration="700"
               >
                 <div class="step_top">
                   <h2 class="booking_footer__right_header phone_second header">
@@ -357,6 +423,9 @@
               </div>
               <div
                 class="booking_footer__right_third-step booking_footer__step"
+                data-aos="zoom-in"
+                data-aos-delay="450"
+                data-aos-duration="700"
               >
                 <div class="step_top">
                   <h2 class="booking_footer__right_header phone_third header">
@@ -382,7 +451,12 @@
     </div>
 
     <footer>
-      <div class="footer_top">
+      <div
+        class="footer_top"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="center-bottom"
+      >
         <div class="container">
           <h1 class="footer_top__header header">
             Hear From Our Happy Customers
@@ -431,7 +505,7 @@
         </div>
       </div>
 
-      <div class="footer_bottom">
+      <div class="footer_bottom" data-aos="slide-up" data-aos-duration="1500">
         <div class="container">
           <div class="footer_bottom__content">
             <div class="footer_bottom__left_side">
@@ -485,6 +559,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="app.js"></script>

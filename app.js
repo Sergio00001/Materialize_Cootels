@@ -61,24 +61,6 @@ const swiper = new Swiper('.swiper', {
 })
 
 // Dropdown for phone Size
-
-// const dropdownBtn = document.querySelector('.dropdown_button')
-// const dropdownMenu = document.querySelector('.dropdown_content')
-// const body = document.querySelector('body')
-
-// dropdownBtn.addEventListener('click', () => {
-//   dropdownMenu.classList.toggle('active_dropdown')
-// })
-
-// body.addEventListener('click', (event) => {
-//   if (
-//     !event.target.classList.contains('material-icons') &&
-//     !event.target.classList.contains('dropdown_link')
-//   ) {
-//     dropdownMenu.classList.remove('active_dropdown')
-//   }
-// })
-
 const dropdownOpen = document.querySelector('.nav_dropdown')
 const dropdownContent = document.querySelector('.dropdown__content')
 const dropdownBody = document.querySelector('.dropdown__body')
@@ -117,3 +99,6 @@ dropdownOpen.addEventListener('click', () => {
 })
 
 // Dropdown for phone Size
+
+// Scroll Animation
+AOS.init()
