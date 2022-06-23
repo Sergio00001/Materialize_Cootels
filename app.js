@@ -101,4 +101,6 @@ dropdownOpen.addEventListener('click', () => {
 // Dropdown for phone Size
 
 // Scroll Animation
-AOS.init()
+AOS.init({
+  disable: false,
+})
