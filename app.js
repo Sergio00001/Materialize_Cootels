@@ -62,20 +62,57 @@ const swiper = new Swiper('.swiper', {
 
 // Dropdown for phone Size
 
-const dropdownBtn = document.querySelector('.dropdown_button')
-const dropdownMenu = document.querySelector('.dropdown_content')
+// const dropdownBtn = document.querySelector('.dropdown_button')
+// const dropdownMenu = document.querySelector('.dropdown_content')
+// const body = document.querySelector('body')
+
+// dropdownBtn.addEventListener('click', () => {
+//   dropdownMenu.classList.toggle('active_dropdown')
+// })
+
+// body.addEventListener('click', (event) => {
+//   if (
+//     !event.target.classList.contains('material-icons') &&
+//     !event.target.classList.contains('dropdown_link')
+//   ) {
+//     dropdownMenu.classList.remove('active_dropdown')
+//   }
+// })
+
+const dropdownOpen = document.querySelector('.nav_dropdown')
+const dropdownContent = document.querySelector('.dropdown__content')
+const dropdownBody = document.querySelector('.dropdown__body')
+const dropdownLink = document.querySelectorAll('.dropdown__link')
+const dropdownLinks = document.querySelector('.dropdown__links')
+const dropdownClose = document.querySelector('.dropdown__close')
 const body = document.querySelector('body')
 
-dropdownBtn.addEventListener('click', () => {
-  dropdownMenu.classList.toggle('active_dropdown')
+dropdownClose.addEventListener('click', (e) => {
+  e.stopPropagation()
+  dropdownContent.classList.remove('_drop')
+  dropdownLink.forEach((link) => link.classList.remove('_drop'))
+  body.classList.remove('_drop')
 })
 
-body.addEventListener('click', (event) => {
-  if (
-    !event.target.classList.contains('material-icons') &&
-    !event.target.classList.contains('dropdown_link')
-  ) {
-    dropdownMenu.classList.remove('active_dropdown')
+dropdownBody.addEventListener('click', (e) => {
+  e.stopPropagation()
+  console.log(e.target.classList)
+  if (e.target.classList[0] !== 'dropdown__link') {
+    body.classList.remove('_drop')
+    dropdownContent.classList.remove('_drop')
+    dropdownLink.forEach((link) => link.classList.remove('_drop'))
+  }
+})
+
+dropdownOpen.addEventListener('click', () => {
+  dropdownContent.classList.add('_drop')
+  body.classList.add('_drop')
+
+  for (let i = 0; i < dropdownLink.length; i++) {
+    const dropLink = dropdownLink[i]
+    setTimeout(() => {
+      dropLink.classList.add('_drop')
+    }, 200)
   }
 })
 
